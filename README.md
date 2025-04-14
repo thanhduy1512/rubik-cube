@@ -1,54 +1,115 @@
-# React + TypeScript + Vite
+# Rubik's Cube 3D Visualization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A 3D interactive Rubik's Cube built with React, TypeScript, and Tailwind CSS. This project provides an immersive experience for visualizing and interacting with a Rubik's Cube in a 3D space.
 
-Currently, two official plugins are available:
+![Rubik's Cube Preview](preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🎮 Interactive 3D cube visualization
+- 🖱️ Mouse-based cube rotation
+- 📱 Responsive design for all devices
+- 🎨 Color-coded cube faces
+- 🔄 Smooth animations and transitions
+- 🧩 Modular and maintainable codebase
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/thanhduy1512/rubik-cube.git
+   cd rubik-cube
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+```
+src/
+├── sections/
+│   └── cube/
+│       ├── components/     # React components for the cube
+│       ├── constants/      # Constants and configuration
+│       ├── hooks/          # Custom React hooks
+│       ├── styles/         # CSS styles
+│       ├── types/          # TypeScript type definitions
+│       └── utils/          # Utility functions
+├── App.tsx                 # Main application component
+└── main.tsx               # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Code Style
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- TypeScript for type safety
+- React functional components with hooks
+- Tailwind CSS for styling
+- ESLint and Prettier for code formatting
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+
+## Documentation
+
+For more detailed information about the project, please refer to:
+
+- [Project Structure](.rules/PROJECT-STRUCTURE.md)
+- [Current Features](.rules/CURRENT-FEATURES.md)
+- [Development Rules](.rules/DEVELOPMENT-RULES.md)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- React for the UI framework
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Vite for the build tool
+- All contributors and supporters
+
+## Contact
+
+Thanh Duy - [@thanhduy1512](https://github.com/thanhduy1512)
+
+Project Link: [https://github.com/thanhduy1512/rubik-cube](https://github.com/thanhduy1512/rubik-cube)
